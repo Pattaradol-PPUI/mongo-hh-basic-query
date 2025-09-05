@@ -1,0 +1,5 @@
+db.pizzaOrders.find({quantity: {$lte: 5}, credit_card_type: "mastercard"})
+
+db.pizzaOrders.find({size: "small", quantity: {$gte: 1, $lte:5}})
+
+db.pizzaOrders.find({quantity: {$gte: 10}, credit_card_type: {$ne: "mastercard"}})
